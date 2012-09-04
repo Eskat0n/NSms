@@ -2,10 +2,10 @@
 {
     using Xunit;
 
-    public class SmsSendTests
+    public class SmsSendTests : LiveTestsBase
     {
         [Fact]
-        public void SendSms()
+        public void SendSimpleUtf8SmsToOneRecipient()
         {
             
         }  
