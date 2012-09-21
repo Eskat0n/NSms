@@ -5,20 +5,9 @@ namespace Codeparts.NSms
 
     public class PhoneNumber
     {
-        private readonly string _countryCode;
-        private readonly string _carrierCode;
         private readonly string _abonentNumber;
-
-        public static PhoneNumber Parse(string input)
-        {
-            return new PhoneNumber(null, null, null);
-        }
-
-        public static bool TryParse(string input, out PhoneNumber phoneNumber)
-        {
-            phoneNumber = new PhoneNumber(null, null, null); 
-            return false;
-        }
+        private readonly string _carrierCode;
+        private readonly string _countryCode;
 
         public PhoneNumber(string countryCode, string carrierCode, string abonentNumber)
         {
@@ -29,6 +18,11 @@ namespace Codeparts.NSms
             if (string.IsNullOrWhiteSpace(abonentNumber))
                 throw new ArgumentException("Abonent number must be specified", "abonentNumber");
 
+            var phoneNumberLength = countryCode.Length + carrierCode.Length + abonentNumber.Length;
+            if (phoneNumberLength != 11)
+                throw new ArgumentException(string.Format("Invalid phone number length. Excepted 11 but was {0}",
+                                                          phoneNumberLength));
+
             _countryCode = countryCode;
             _carrierCode = carrierCode;
             _abonentNumber = abonentNumber;
@@ -38,15 +32,26 @@ namespace Codeparts.NSms
         {
             get { return _countryCode; }
         }
-        
+
         public string CarrierCode
         {
             get { return _carrierCode; }
         }
-        
+
         public string AbonentNumber
         {
             get { return _abonentNumber; }
+        }
+
+        public static PhoneNumber Parse(string input)
+        {
+            return new PhoneNumber(null, null, null);
+        }
+
+        public static bool TryParse(string input, out PhoneNumber phoneNumber)
+        {
+            phoneNumber = new PhoneNumber(null, null, null);
+            return false;
         }
 
         protected bool Equals(PhoneNumber other)
