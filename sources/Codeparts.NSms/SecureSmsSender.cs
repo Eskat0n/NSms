@@ -16,5 +16,10 @@ namespace Codeparts.NSms
         {
             get { yield break; }
         }
+
+        public override string Send(string recipient, string text)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

@@ -15,5 +15,13 @@ namespace Codeparts.NSms
         {
             get { yield return string.Format("api_id={0}", _apiId); }
         }
+
+        public override string Send(string recipient, string text)
+        {
+            var parameters = new {to = recipient, text};
+            var queryString = CreateQueryString(parameters);
+
+            return WebClient.DownloadString(string.Format("/sms/send{0}", queryString));
+        }
     }
 }
