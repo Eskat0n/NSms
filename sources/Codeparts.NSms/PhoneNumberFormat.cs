@@ -5,8 +5,8 @@ namespace Codeparts.NSms
     [Flags]
     public enum PhoneNumberFormat
     {
-        PlusSign,
-        Braces,
-        Spaces
+        PlusSign = 1,
+        Braces = 2,
+        Spaces = 4
     }
 }
