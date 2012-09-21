@@ -1,5 +1,6 @@
 ﻿namespace Codeparts.NSms.Tests.Unit
 {
+    using System;
     using Xunit;
 
     public class PhoneNumberTests
@@ -17,6 +18,30 @@
             Assert.Equal("7", _phoneNumber.CountryCode);
             Assert.Equal("123", _phoneNumber.CarrierCode);
             Assert.Equal("4567890", _phoneNumber.AbonentNumber);
+        }
+
+        [Fact]
+        public void ShouldThrowExceptionForNullCountryCode()
+        {
+            Assert.Throws<ArgumentException>(() => new PhoneNumber(null, "123", "4567890"));
+        }
+        
+        [Fact]
+        public void ShouldThrowExceptionForNullCarrierCode()
+        {
+            Assert.Throws<ArgumentException>(() => new PhoneNumber("7", null, "4567890"));
+        }
+        
+        [Fact]
+        public void ShouldThrowExceptionForNullAbonentNumber()
+        {
+            Assert.Throws<ArgumentException>(() => new PhoneNumber("7", "123", null));
+        }
+        
+        [Fact]
+        public void ShouldThrowExceptionForInvalidPhoneNumber()
+        {
+            Assert.Throws<ArgumentException>(() => new PhoneNumber("7", "123", "456"));
         }
 
         [Fact]
