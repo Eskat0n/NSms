@@ -43,6 +43,8 @@
             return string.Format("?{0}", string.Join("&", parametersPairs));
         }
 
-        public abstract string Send(string recipient, string text);
+        public abstract SmsMessage Send(string recipient, string text);
+
+        public abstract SmsMessage Send(IEnumerable<string> recipients, string text);
     }
 }

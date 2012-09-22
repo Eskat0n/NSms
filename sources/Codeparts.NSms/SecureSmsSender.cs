@@ -17,7 +17,12 @@ namespace Codeparts.NSms
             get { yield break; }
         }
 
-        public override string Send(string recipient, string text)
+        public override SmsMessage Send(string recipient, string text)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public override SmsMessage Send(IEnumerable<string> recipients, string text)
         {
             throw new System.NotImplementedException();
         }
