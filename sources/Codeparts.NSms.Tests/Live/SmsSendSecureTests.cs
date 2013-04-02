@@ -1,5 +1,6 @@
 ﻿namespace NSms.Tests.Live
 {
+    using Boilerplate;
     using NUnit.Framework;
 
     [TestFixture]

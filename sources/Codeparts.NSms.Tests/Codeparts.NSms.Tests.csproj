@@ -39,7 +39,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LiveTestsBase.cs" />
+    <Compile Include="Boilerplate\LiveTestsBase.cs" />
     <Compile Include="Live\SmsSendSecureTests.cs" />
     <Compile Include="Live\SmsSendTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

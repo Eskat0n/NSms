@@ -1,4 +1,4 @@
-﻿namespace NSms.Tests
+﻿namespace NSms.Tests.Boilerplate
 {
     using System.Configuration;
 

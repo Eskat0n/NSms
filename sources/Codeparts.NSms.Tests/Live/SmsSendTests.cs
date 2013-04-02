@@ -2,6 +2,7 @@
 {
     using System;
     using System.Configuration;
+    using Boilerplate;
     using NUnit.Framework;
 
     [TestFixture]
