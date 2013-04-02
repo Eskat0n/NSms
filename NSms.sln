@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codeparts.NSms", "sources\Codeparts.NSms\Codeparts.NSms.csproj", "{927EE97C-D15C-4113-BBFD-C9E9DF60B05D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSms", "sources\Codeparts.NSms\NSms.csproj", "{927EE97C-D15C-4113-BBFD-C9E9DF60B05D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codeparts.NSms.Tests", "sources\Codeparts.NSms.Tests\Codeparts.NSms.Tests.csproj", "{3E5844A6-0B46-4459-A804-CF5752222E43}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSms.Tests", "sources\Codeparts.NSms.Tests\NSms.Tests.csproj", "{3E5844A6-0B46-4459-A804-CF5752222E43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codeparts.NSms.Async", "sources\Codeparts.NSms.Async\Codeparts.NSms.Async.csproj", "{214C2BC9-9378-49A7-AA5C-A61F4FBC78D6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSms.Async", "sources\Codeparts.NSms.Async\NSms.Async.csproj", "{214C2BC9-9378-49A7-AA5C-A61F4FBC78D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codeparts.NSms.Async.Tests", "sources\Codeparts.NSms.Async.Tests\Codeparts.NSms.Async.Tests.csproj", "{6318333E-D37C-4EE4-A244-983778EA6805}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSms.Async.Tests", "sources\Codeparts.NSms.Async.Tests\NSms.Async.Tests.csproj", "{6318333E-D37C-4EE4-A244-983778EA6805}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.0", "4.0", "{CE69D929-99B2-4D4C-8CC7-677F5F719FB9}"
 EndProject
@@ -40,9 +40,9 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{927EE97C-D15C-4113-BBFD-C9E9DF60B05D} = {CE69D929-99B2-4D4C-8CC7-677F5F719FB9}
 		{3E5844A6-0B46-4459-A804-CF5752222E43} = {CE69D929-99B2-4D4C-8CC7-677F5F719FB9}
-		{214C2BC9-9378-49A7-AA5C-A61F4FBC78D6} = {0336B5D3-7ACF-4233-8C4C-5094D2617C3E}
+		{927EE97C-D15C-4113-BBFD-C9E9DF60B05D} = {CE69D929-99B2-4D4C-8CC7-677F5F719FB9}
 		{6318333E-D37C-4EE4-A244-983778EA6805} = {0336B5D3-7ACF-4233-8C4C-5094D2617C3E}
+		{214C2BC9-9378-49A7-AA5C-A61F4FBC78D6} = {0336B5D3-7ACF-4233-8C4C-5094D2617C3E}
 	EndGlobalSection
 EndGlobal

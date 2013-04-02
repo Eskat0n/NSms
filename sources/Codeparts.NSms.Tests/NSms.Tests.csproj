@@ -50,9 +50,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Codeparts.NSms\Codeparts.NSms.csproj">
+    <ProjectReference Include="..\Codeparts.NSms\NSms.csproj">
       <Project>{927ee97c-d15c-4113-bbfd-c9e9df60b05d}</Project>
-      <Name>Codeparts.NSms</Name>
+      <Name>NSms</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
