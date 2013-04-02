@@ -1,5 +1,7 @@
-/_ReSharper.*/
-/sources/*/bin/
-/sources/*/obj/
+_ReSharper.*/
+sources/*/bin/
+sources/*/obj/
 *.user
 *.suo
+packages/
+tests/
