@@ -2,20 +2,23 @@
 {
     using System;
     using System.Configuration;
-    using Xunit;
+    using NUnit.Framework;
 
+    [TestFixture]
+    [Category("Live")]
     public class SmsSendTests : LiveTestsBase
     {
-        private readonly string _phoneNumber;
-        private readonly string _apiKey;
+        private string _phoneNumber;
+        private string _apiKey;
 
-        public SmsSendTests()
+        [TestFixtureSetUp]
+        public void FixtureSetUp()
         {
             _phoneNumber = ConfigurationManager.AppSettings["PhoneNumber"];
             _apiKey = ConfigurationManager.AppSettings["ApiKey"];
         }
 
-        [Fact]
+        [Test]
         public void SendSimpleUtf8SmsToOneRecipient()
         {
             var smsSender = SmsSender.Create(_apiKey);
@@ -24,7 +27,7 @@
             DumpMessageToConsole(message);
         }
 
-        [Fact]
+        [Test]
         public void SendSimpleUtf8SmsToManyRecipients()
         {
             var smsSender = SmsSender.Create(_apiKey);
