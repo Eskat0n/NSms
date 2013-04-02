@@ -1,4 +1,4 @@
-namespace Codeparts.NSms
+namespace NSms
 {
     using System;
     using System.Text;

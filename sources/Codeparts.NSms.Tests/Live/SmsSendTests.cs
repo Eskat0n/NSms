@@ -1,8 +1,7 @@
-﻿namespace Codeparts.NSms.Tests.Live
+﻿namespace NSms.Tests.Live
 {
     using System;
     using System.Configuration;
-    using System.Linq;
     using Xunit;
 
     public class SmsSendTests : LiveTestsBase

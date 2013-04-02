@@ -1,4 +1,4 @@
-﻿namespace Codeparts.NSms.Tests.Live
+﻿namespace NSms.Tests.Live
 {
     using Xunit;
 

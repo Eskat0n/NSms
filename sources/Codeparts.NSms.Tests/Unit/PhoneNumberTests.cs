@@ -1,4 +1,4 @@
-﻿namespace Codeparts.NSms.Tests.Unit
+﻿namespace NSms.Tests.Unit
 {
     using System;
     using Xunit;

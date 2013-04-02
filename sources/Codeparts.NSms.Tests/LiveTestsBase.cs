@@ -1,4 +1,4 @@
-﻿namespace Codeparts.NSms.Tests
+﻿namespace NSms.Tests
 {
     using System.Configuration;
 
