@@ -7,8 +7,8 @@
     <ProjectGuid>{214C2BC9-9378-49A7-AA5C-A61F4FBC78D6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Codeparts.NSms.Async</RootNamespace>
-    <AssemblyName>Codeparts.NSms.Async</AssemblyName>
+    <RootNamespace>NSms.Async</RootNamespace>
+    <AssemblyName>NSms.Async</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

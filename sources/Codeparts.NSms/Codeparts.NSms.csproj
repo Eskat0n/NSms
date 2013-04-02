@@ -7,8 +7,8 @@
     <ProjectGuid>{927EE97C-D15C-4113-BBFD-C9E9DF60B05D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Codeparts.NSms</RootNamespace>
-    <AssemblyName>Codeparts.NSms</AssemblyName>
+    <RootNamespace>NSms</RootNamespace>
+    <AssemblyName>NSms</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
